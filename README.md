@@ -26,12 +26,13 @@ Este repositório tem como foco o aprendizado e aplicação dos principais conce
 ## 📂 Estrutura do projeto
 
 
+```bash
 POO_Java/
  ├── src/
  │    └── Main.java
  ├── .gitignore
  └── README.md
-
+```
 
 ---
 
