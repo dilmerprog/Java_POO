@@ -41,7 +41,7 @@ POO_Java/
 1. Clone o repositório:
 
 
-git clone https://github.com/dilmerprog/POO_Java.git
+git clone https:https://github.com/dilmerprog/Java_POO.git
 
 
 2. Abra o projeto no IntelliJ
