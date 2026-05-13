@@ -1,13 +1,59 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+public class Main {
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+    public static void main(String[] args) {
+
+        //Crinado cursos
+        Cursos curso1 = new Cursos(
+                "Java",
+                80,
+                350.0
+        );
+
+        Cursos curso2 = new Cursos(
+                "Python",
+                60,
+                300.0
+        );
+
+        //Criando Alunos
+        Alunos aluno1 = new Alunos(
+                "001",
+                "Carlos",
+                "Carlos@gmail.com",
+                curso1
+        );
+
+        Alunos aluno2 = new Alunos(
+                "002",
+                "Ana",
+                "ana@gmail.com",
+                curso2
+        );
+
+        //Mostrar Cursos
+        System.out.println("==== Cursos ====");
+
+        curso1.MostrarDadosCurso();
+        System.out.println();
+
+        curso2.MostrarDadosCurso();
+        System.out.println();
+
+        //Total de Cursos
+        System.out.println("Total de cursos: " + Cursos.totalCursosCriados);
+        System.out.println();
+
+        //Mostrar Alunos
+        System.out.println("==== Alunos ====");
+
+        aluno1.MonstraDadosAluno();
+        System.out.println();
+
+        aluno2.MonstraDadosAluno();
+        System.out.println();
+
+
+        //Total de Alunos
+        System.out.println("Total de alunos: " + Alunos.totalAlunosCadastrados);
     }
 }
